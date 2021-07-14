@@ -74,9 +74,15 @@ li a:first-child {
   padding: 10px 4px;
   color: #fff;
 }
+.btn:hover {
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
 .top-content {
   display: flex;
   margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 .half-width {
   width: 50%;
@@ -87,6 +93,10 @@ li a:first-child {
 }
 .top-img img {
   width: 100%;
+  transition: transform 0.3s linear;
+}
+.top-img img:hover {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 /* player info section */
 .container {
@@ -105,6 +115,9 @@ li a:first-child {
   overflow: hidden;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .player h2 {
   font-weight: bold;
@@ -141,6 +154,13 @@ p {
   height: 427px;
 }
 /* footer content */
+.footer-content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .footer-img img {
   width: 483.87px;
   height: 110px;
@@ -168,9 +188,25 @@ p {
  Media Queries 
  -------------------------------------------*/
 /* For Mobile Devices */
-@media only screen and (max-width: 668px) {
+@media (max-width: 687px) {
   .container {
     width: 100%;
+  }
+  .top-content {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+  }
+  .header-info {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .header-info h1 {
+    font-size: 30px;
+  }
+  .top-img {
+    width: 260px;
   }
   .player,
   .top-content,
@@ -179,7 +215,9 @@ p {
     align-items: center;
     justify-content: center;
   }
-
+  .navigation {
+    display: none;
+  }
   .players,
   .blogs,
   .courses {
@@ -187,10 +225,17 @@ p {
     grid-gap: 20px;
   }
 }
-.navigation {
-  display: none;
+.footer-img img {
+  height: 110px;
 }
 
+.footer-content {
+  width: 80%;
+  margin-bottom: 40px;
+}
+.footer-content h2 {
+  font-size: 20px;
+}
 /* tablet devices */
 
 @media only screen and (min-width: 668px) and (max-width: 992px) {
