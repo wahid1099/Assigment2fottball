@@ -159,6 +159,34 @@ p {
   width: 567px;
   height: 427px;
 }
+/* .Results info */
+.match-results{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  
+}
+#results{
+  margin-top: 80px;
+
+}
+.result{
+  width: 330px;
+  height: 574px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.winner-img img{
+  width: 329px;
+  height: 256px;
+
+}
 /* footer content */
 .footer-content {
   width: 40%;
@@ -225,7 +253,7 @@ p {
 
 
 
-  .players {
+  .match-results,.players {
     
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px 0px;
@@ -274,14 +302,9 @@ p {
 }
 /* tablet devices */
 
-/* @media only screen and (min-width: 668px) and (max-width: 992px) {
+ @media only screen and (min-width: 668px) and (max-width: 992px) {
   .container {
     width: 100%;
   }
-  .players,
-  .courses {
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 5px;
-  } */
+ 
+ }
