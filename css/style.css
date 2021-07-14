@@ -55,6 +55,9 @@ Css For Header section
   align-items: center;
   padding-left: 0;
 }
+.bars{
+  display:none;
+}
 li a {
   color: white;
   text-transform: capitalize;
@@ -212,8 +215,11 @@ p {
   .top-img {
     width: 260px;
   }
-  .navigation{
+  .navigation ul{
     display: none;
+  }
+  .bars{
+    display:block;
   }
   /* player css */
 
