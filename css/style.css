@@ -55,8 +55,8 @@ Css For Header section
   align-items: center;
   padding-left: 0;
 }
-.bars{
-  display:none;
+.bars {
+  display: none;
 }
 li a {
   color: white;
@@ -64,8 +64,8 @@ li a {
   font-size: 16px;
   margin-left: 36px;
 }
-li a:first-child {
-}
+/* li a:first-child {
+} */
 .btn {
   height: 20px;
   display: flex;
@@ -121,6 +121,12 @@ li a:first-child {
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: transform 250ms;
+}
+.player:hover{
+  transform: translateY(-10px);
+  
+
 }
 .player h2 {
   font-weight: bold;
@@ -130,12 +136,9 @@ li a:first-child {
   width: 329px;
   height: 256px;
 }
-p {
-  color: #6c6c6c;
-  font-size: 16px;
-}
+
 /* highlights css */
-.player-article{
+.player-article {
   display: flex;
 }
 .highlights {
@@ -160,17 +163,15 @@ p {
   height: 427px;
 }
 /* .Results info */
-.match-results{
+.match-results {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  
 }
-#results{
+#results {
   margin-top: 80px;
-
 }
-.result{
+.result {
   width: 330px;
   height: 574px;
   background-color: #ffffff;
@@ -180,12 +181,10 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 .winner-img img{
   width: 329px;
   height: 256px;
-
 }
 /* footer content */
 .footer-content {
@@ -243,18 +242,16 @@ p {
   .top-img {
     width: 260px;
   }
-  .navigation ul{
+  .navigation ul {
     display: none;
   }
-  .bars{
-    display:block;
+  .bars {
+    display: block;
   }
   /* player css */
 
-
-
-  .match-results,.players {
-    
+  .match-results,
+  .players {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px 0px;
   }
@@ -264,14 +261,14 @@ p {
     height: 256px;
   }
   /* highlights */
-  .highlights{
+  .highlights {
     width: 100%;
   }
-  .player-article{
+  .player-article {
     justify-content: center;
     flex-direction: column;
   }
-  .highlights-info{
+  .highlights-info {
     width: 90%;
 
     margin-bottom: 40px;
@@ -280,31 +277,101 @@ p {
     align-items: center;
     flex-direction: column;
   }
-  .match-img img{
+  .match-img {
+  
+  }
+  .match-img img {
     width: 347px;
     height: 207px;
-   
   }
-  .match-img{
-    margin-left: 10px;
-  }
+  
   /* footer css */
-.footer-img img {
-  height: 110px;
-}
-
-.footer-content {
-  width: 80%;
-  margin-bottom: 40px;
-}
-.footer-content h2 {
-  font-size: 20px;
-}
-/* tablet devices */
-
- @media only screen and (min-width: 668px) and (max-width: 992px) {
-  .container {
-    width: 100%;
+  .footer-img img {
+    height: 110px;
   }
- 
- }
+
+  .footer-content {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .footer-content h2 {
+    font-size: 20px;
+  }
+  /* tablet devices */
+
+  @media (min-width: 687px) and (max-width: 991px) {
+    .container {
+      width: 100%;
+    }
+    .top-content {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      margin: 40px 0 0 0;
+    }
+    .header-info {
+      width: 90%;
+      margin-bottom: 50px;
+    }
+    .header-info h1 {
+      font-size: 30px;
+    }
+    .top-img {
+      width: 260px;
+    }
+    .navigation ul {
+      display: none;
+    }
+    .bars {
+      display: block;
+    }
+    /* player css */
+
+    .match-results,
+    .players {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px 0px;
+    }
+
+    .player-img img {
+      width: 100%;
+      height: 256px;
+    }
+    /* highlights */
+    .highlights {
+      width: 100%;
+    }
+    .player-article {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .highlights-info {
+      width: 90%;
+
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .match-img img {
+      width: 347px;
+      height: 207px;
+    }
+    .match-img {
+      margin-left: 10px;
+    }
+    /* footer css */
+    .footer-img img {
+      height: 110px;
+    }
+
+    .footer-content {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+    .footer-content h2 {
+      font-size: 20px;
+    }
+  }
+
