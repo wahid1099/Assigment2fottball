@@ -20,6 +20,10 @@ li {
 a {
   text-decoration: none;
 }
+p {
+  color: #6c6c6c;
+  font-size: 16px;
+}
 
 /* ----------------------------------------------------------------
 Css For Header section
@@ -68,6 +72,7 @@ li a:first-child {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px 4px;
+  color: #fff;
 }
 .top-content {
   display: flex;
@@ -109,7 +114,94 @@ li a:first-child {
   width: 329px;
   height: 256px;
 }
-.player p {
+p {
   color: #6c6c6c;
   font-size: 16px;
+}
+/* highlights css */
+.highlights {
+  display: flex;
+  margin-top: 162px;
+}
+.half-width {
+  width: 50%;
+}
+.highlights-info h1 {
+  font-size: 47px;
+  font-weight: bold;
+}
+.highlights-info a {
+  color: #fff;
+}
+.match-img {
+  margin-left: 66px;
+}
+.match-img img {
+  width: 567px;
+  height: 427px;
+}
+/* footer content */
+.footer-img img {
+  width: 483.87px;
+  height: 110px;
+  margin-top: 154px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icon {
+  height: 18px;
+  width: 28px;
+  margin-left: 10px;
+  color: #232324;
+  background-color: #969bab;
+  background-size: cover;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+.copyright {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/*----------------------------------------------------------------
+ Media Queries 
+ -------------------------------------------*/
+/* For Mobile Devices */
+@media only screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+  }
+  .player,
+  .top-content,
+  .course {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+.navigation {
+  display: none;
+}
+
+/* tablet devices */
+
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+  }
 }
