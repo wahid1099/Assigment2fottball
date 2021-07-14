@@ -1,0 +1,115 @@
+/* font cdn */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+
+/* Common styles and utilities */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------------------
+Css For Header section
+------------------------------------------------- */
+
+#top-content {
+  background-color: #2d25a0;
+  width: 100%;
+  height: 667px;
+  display: flex;
+  justify-content: center;
+}
+.header-content {
+  width: 1200px;
+  color: white;
+}
+.header {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+  align-items: center;
+}
+.navigation ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+}
+li a {
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-left: 36px;
+}
+li a:first-child {
+}
+.btn {
+  height: 20px;
+  display: flex;
+  width: 123px;
+  background: #e02c6d;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 4px;
+}
+.top-content {
+  display: flex;
+  margin-top: 50px;
+}
+.half-width {
+  width: 50%;
+}
+.half-width h1 {
+  font-weight: bold;
+  font-size: 64px;
+}
+.top-img img {
+  width: 100%;
+}
+/* player info section */
+.container {
+  width: 1052px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 69px;
+}
+.player {
+  width: 330px;
+  height: 474px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.player h2 {
+  font-weight: bold;
+  font-size: 28px;
+}
+.player-img img {
+  width: 329px;
+  height: 256px;
+}
+.player p {
+  color: #6c6c6c;
+  font-size: 16px;
+}
